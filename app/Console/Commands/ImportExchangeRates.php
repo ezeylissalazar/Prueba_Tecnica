@@ -14,7 +14,7 @@ class ImportExchangeRates extends Command
     protected $description = 'Import exchange rates from ECB';
 
     protected $defaultRecordLimit = 10;
-    protected $xmlFilePath = 'app/public/xml/eurofxref-hist.xml';
+    protected $xmlFilePath = 'xml/eurofxref-hist.xml';
     protected $xmlUrl = 'https://www.ecb.europa.eu/stats/eurofxref/eurofxref-hist.xml';
 
     public function handle()
@@ -37,7 +37,7 @@ class ImportExchangeRates extends Command
 
     protected function importFromFile($limit)
     {
-        $path = storage_path($this->xmlFilePath);
+        $path = public_path($this->xmlFilePath);
 
         if (file_exists($path)) {
             $xml = simplexml_load_file($path);
