@@ -11,7 +11,11 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 Route::get('/', function () {
-    return view('auth.login');
+    if (auth()->check()) {
+        return redirect()->route('home');
+    } else {
+        return redirect()->route('login');
+    }
 });
 Route::middleware(['auth'])->group(function () {
 
@@ -29,5 +33,4 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/type-of-activities/associate-activities-company/{id}', [TypeActivityController::class, 'associate_activity'])->name('typeActivity.associate');
     Route::get('/convert', [CurrencyConversionController::class, 'showForm'])->name('show_conversion_form');
     Route::get('/convert/process', [CurrencyConversionController::class, 'convert'])->name('convert');
-    
 });
