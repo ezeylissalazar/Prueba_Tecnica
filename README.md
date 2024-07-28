@@ -4,9 +4,8 @@ Este proyecto es una aplicación Laravel que incluye autenticación, gestión de
 
 ## Requisitos
 
-- PHP >= 7.4
+- PHP >= 8.3
 - Composer
-- Node.js
 - npm
 
 ## Instalación
@@ -15,8 +14,8 @@ Sigue estos pasos para instalar y configurar el proyecto:
 
 1. Clona el repositorio:
     ```bash
-    git clone https://github.com/tu_usuario/tu_repositorio.git
-    cd tu_repositorio
+    git clone https://github.com/ezeylissalazar/Prueba_Tecnica.git
+    cd Prueba_Tecnica
     ```
 
 2. Instala las dependencias de PHP:
