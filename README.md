@@ -63,28 +63,28 @@ El comando de importación es:
 
 1. Opciones de Importación:
 
-Para importar todos los datos desde el archivo XML guardado en el proyecto:
+2. Para importar todos los datos desde el archivo XML guardado en el proyecto:
 
 El comando de importación es:
     ```bash
     php artisan import:exchange-rates --source=file
     ```
 
-Para importar todos los datos desde el archivo XML guardado en el proyecto:
+3. Para importar todos los datos desde el archivo XML guardado en el proyecto:
 
 El comando de importación es:
     ```bash
     php artisan import:exchange-rates --source=file
     ```
 
-Para importar una cantidad limitada de registros desde el archivo XML:
+4. Para importar una cantidad limitada de registros desde el archivo XML:
 
 El comando de importación es:
     ```bash
     php artisan import:exchange-rates --limit=10 --source=file
     ```
 
-Para importar desde una URL en lugar de un archivo:
+5. Para importar desde una URL en lugar de un archivo:
 
 El comando de importación es:
     ```bash
@@ -94,7 +94,6 @@ El comando de importación es:
 ## Configuración del Correo Electrónico
 
 Para cambiar el correo de envío, edita las siguientes variables en el archivo .env:
-
 
 MAIL_USERNAME=pruebatecnica717@gmail.com
 MAIL_FROM_ADDRESS=pruebatecnica717@gmail.com
